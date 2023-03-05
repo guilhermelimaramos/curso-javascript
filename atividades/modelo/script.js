@@ -1,23 +1,20 @@
 function carregar() {
     var msg = document.querySelector('#msg')
-    var img = document.querySelector('#imagem')
+    var img = document.querySelector('#foto')
     var data = new Date()
     var hora = data.getHours()
-    msg.innerHTML = `Agora são ${hora} hora(s).`
+    hora = 20
+
+    msg.innerHTML = `Agora são ${hora} hora(s)`
+
     if (hora < 12) {
         //BOM DIA
-        img.src = 'image/manhã.png'
-        document.body.style.background = '#A67841'
-
+        img.src = 'manhã.png'
     } else if (hora < 18) {
         //BOA TARDE
-        img.src = 'image/tarde.png'
-        img.alt = 'foto tarde'
-        document.body.style.background = '#512E46'
+        img.src = 'tarde.png'
     } else {
         //BOA NOITE
-        img.src = 'image/noitemavi.png'
-        img.alt = 'foto noite'
-        document.body.style.background = '#363473'
+        img.src = 'noite.png'
     }
 }
