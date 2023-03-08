@@ -16,7 +16,7 @@ for (const i in num) {
     console.info(` A posição ${i} recebe: ${num[i]}`)
 }
 
-const pos = num.indexOf(0) //Retorna a posição do elemento, caso tenha, retorna -1
+const pos = num.indexOf(0) //Retorna a posição do elemento, caso não tenha, retorna -1
 
 if (pos == -1) {
     console.error('valor não encontrado')
